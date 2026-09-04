@@ -13,3 +13,31 @@ if ask==a:                                        # checking the match using if 
     print('wow u guessed it')                     # if correct
 else:                                             # else condition
     print('opps!, wrong guess, the number was',a) #if not correct
+
+next way to work the same
+added a too high and too low case , allowing user multiple attempts unitl user gets it correct
+
+import random                                     # importing the ramdom module
+
+num=random.randint(1,10)                          # generating a random number
+
+a=num                                             # assinging a variable to the number
+
+ask=int(input('entre a number:'))                 # user input
+i=1                                               # can use while true form also
+while  i==1:                                      #while true form will also work
+    if ask==a:                                    # checking the match using if conditon
+        print('wow u guessed it')
+        i=0                                        # here can use break key word also
+    elif ask>a:
+        print('number too high')
+        ask=int(input('entre a number:'))
+    elif ask<a:
+        print('number too low')
+        ask=int(input('entre a number:'))
+
+print('------------------------------------------------')
+
+
+print('------------------------------------------------')
+
